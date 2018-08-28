@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990890172133E8E100D5B9AA /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 990890162133E8E100D5B9AA /* HitTestView.m */; };
+		9908901A2133F15900D5B9AA /* OneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 990890192133F15900D5B9AA /* OneView.m */; };
 		991A931D212D938E008C353D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A931C212D938E008C353D /* AppDelegate.m */; };
 		991A9320212D938E008C353D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A931F212D938E008C353D /* ViewController.m */; };
 		991A9323212D938E008C353D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991A9321212D938E008C353D /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		991A932B212D938F008C353D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A932A212D938F008C353D /* main.m */; };
 		991A9335212D9390008C353D /* LuciferKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A9334212D9390008C353D /* LuciferKitTests.m */; };
 		991A9340212D9390008C353D /* LuciferKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A933F212D9390008C353D /* LuciferKitUITests.m */; };
+		991A9352212E3C8D008C353D /* LuciferTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A9351212E3C8D008C353D /* LuciferTimer.m */; };
+		991A9355212EA11B008C353D /* Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A9354212EA11B008C353D /* Test1.m */; };
+		991A9358212EA12F008C353D /* Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A9357212EA12F008C353D /* Test2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		990890152133E8E100D5B9AA /* HitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestView.h; sourceTree = "<group>"; };
+		990890162133E8E100D5B9AA /* HitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestView.m; sourceTree = "<group>"; };
+		990890182133F15900D5B9AA /* OneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneView.h; sourceTree = "<group>"; };
+		990890192133F15900D5B9AA /* OneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneView.m; sourceTree = "<group>"; };
 		991A9318212D938E008C353D /* LuciferKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuciferKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		991A931B212D938E008C353D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		991A931C212D938E008C353D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +60,12 @@
 		991A933B212D9390008C353D /* LuciferKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuciferKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		991A933F212D9390008C353D /* LuciferKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuciferKitUITests.m; sourceTree = "<group>"; };
 		991A9341212D9390008C353D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		991A9350212E3C8D008C353D /* LuciferTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LuciferTimer.h; sourceTree = "<group>"; };
+		991A9351212E3C8D008C353D /* LuciferTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuciferTimer.m; sourceTree = "<group>"; };
+		991A9353212EA11B008C353D /* Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1.h; sourceTree = "<group>"; };
+		991A9354212EA11B008C353D /* Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1.m; sourceTree = "<group>"; };
+		991A9356212EA12F008C353D /* Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2.h; sourceTree = "<group>"; };
+		991A9357212EA12F008C353D /* Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +120,16 @@
 				991A931C212D938E008C353D /* AppDelegate.m */,
 				991A931E212D938E008C353D /* ViewController.h */,
 				991A931F212D938E008C353D /* ViewController.m */,
+				991A9350212E3C8D008C353D /* LuciferTimer.h */,
+				991A9351212E3C8D008C353D /* LuciferTimer.m */,
+				990890152133E8E100D5B9AA /* HitTestView.h */,
+				990890162133E8E100D5B9AA /* HitTestView.m */,
+				990890182133F15900D5B9AA /* OneView.h */,
+				990890192133F15900D5B9AA /* OneView.m */,
+				991A9353212EA11B008C353D /* Test1.h */,
+				991A9354212EA11B008C353D /* Test1.m */,
+				991A9356212EA12F008C353D /* Test2.h */,
+				991A9357212EA12F008C353D /* Test2.m */,
 				991A9321212D938E008C353D /* Main.storyboard */,
 				991A9324212D938F008C353D /* Assets.xcassets */,
 				991A9326212D938F008C353D /* LaunchScreen.storyboard */,
@@ -262,9 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991A9358212EA12F008C353D /* Test2.m in Sources */,
+				9908901A2133F15900D5B9AA /* OneView.m in Sources */,
+				991A9352212E3C8D008C353D /* LuciferTimer.m in Sources */,
 				991A9320212D938E008C353D /* ViewController.m in Sources */,
+				991A9355212EA11B008C353D /* Test1.m in Sources */,
 				991A932B212D938F008C353D /* main.m in Sources */,
 				991A931D212D938E008C353D /* AppDelegate.m in Sources */,
+				990890172133E8E100D5B9AA /* HitTestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +464,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXA5T5Y65C;
 				INFOPLIST_FILE = LuciferKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +482,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXA5T5Y65C;
 				INFOPLIST_FILE = LuciferKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

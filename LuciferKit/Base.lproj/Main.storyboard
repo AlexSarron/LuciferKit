@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpX-gF-qlG">
+                                <rect key="frame" x="170" y="220" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="chA-En-xnI"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <action selector="Push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ykd-Vf-VLx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WK-ja-mtl">
+                                <rect key="frame" x="170" y="356" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eO2-dV-uvP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haM-no-SG5">
+                                <rect key="frame" x="157" y="400" width="60" height="30"/>
+                                <state key="normal" title="NSTimer"/>
+                                <connections>
+                                    <action selector="strongTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQ9-8X-TJx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tH0-wC-gBB">
+                                <rect key="frame" x="172" y="294" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pYh-qN-41V"/>
+                                </constraints>
+                                <state key="normal" title="Pop"/>
+                                <connections>
+                                    <action selector="Pop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwa-1U-xqB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0WK-ja-mtl" secondAttribute="bottom" constant="281" id="2uM-eL-gBm"/>
+                            <constraint firstItem="tH0-wC-gBB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="7C3-h9-MQZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="haM-no-SG5" secondAttribute="trailing" constant="158" id="8bc-yH-1Fp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tH0-wC-gBB" secondAttribute="trailing" constant="173" id="9ZK-UA-CiJ"/>
+                            <constraint firstItem="haM-no-SG5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="9p4-Xf-cl7"/>
+                            <constraint firstItem="lpX-gF-qlG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="9uJ-VF-ggj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="haM-no-SG5" secondAttribute="bottom" constant="237" id="V47-W5-E1R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0WK-ja-mtl" secondAttribute="trailing" constant="171" id="VYS-dr-07M"/>
+                            <constraint firstItem="lpX-gF-qlG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="WA0-Ru-KfK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lpX-gF-qlG" secondAttribute="trailing" constant="170" id="XOO-ip-CiS"/>
+                            <constraint firstItem="haM-no-SG5" firstAttribute="top" secondItem="0WK-ja-mtl" secondAttribute="bottom" constant="14" id="avf-6S-PKC"/>
+                            <constraint firstItem="0WK-ja-mtl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="iyF-0p-lgV"/>
+                            <constraint firstItem="0WK-ja-mtl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="m7I-a4-m6d"/>
+                            <constraint firstItem="tH0-wC-gBB" firstAttribute="top" secondItem="lpX-gF-qlG" secondAttribute="bottom" constant="44" id="vmw-Yn-ac7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
